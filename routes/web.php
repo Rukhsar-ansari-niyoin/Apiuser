@@ -76,7 +76,10 @@ Route::group(['prefix' => 'accounts'], function() {
     Route::get('payment_report', [AccountController::class, 'payment_report'])->name('payment.report');
     Route::get('my_credit_book', [AccountController::class, 'my_credit_book'])->name('payment.credit_book');
     Route::get('company_bank_info', [AccountController::class, 'company_bank_info'])->name('payment.company_bank_info');
-    
+    Route::get('disputes', [AccountController::class, 'disputes'])->name('payment.disputes');
+    Route::get('daybook', [AccountController::class, 'daybook'])->name('payment.daybook');
+    Route::get('passbook', [AccountController::class, 'passbook'])->name('payment.passbook');
+    Route::get('invoice', [AccountController::class, 'invoice'])->name('payment.invoice');
 });
    
 
