@@ -17,8 +17,8 @@ class AccountController extends Controller
         $pageTitle = "PAYMENT REQUEST";
          $auth_user = AuthHelper::authSession();
          $assets = ['data-table'];
-         $headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
-         return view('users.agent',compact('pageTitle','auth_user','assets', 'headerAction'));
+         //$headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
+         return view('accounts.payment-request',compact('pageTitle','auth_user','assets'));
          
     // return view('users.agent');
  }
@@ -27,8 +27,8 @@ class AccountController extends Controller
     $pageTitle = "Credit / Debit List";
     $auth_user = AuthHelper::authSession();
     $assets = ['data-table'];
-    $headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
-    return view('users.agent',compact('pageTitle','auth_user','assets', 'headerAction'));
+   // $headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
+    return view('accounts.payment-request',compact('pageTitle','auth_user','assets'));
  }
 
  public function my_credit_book(){
