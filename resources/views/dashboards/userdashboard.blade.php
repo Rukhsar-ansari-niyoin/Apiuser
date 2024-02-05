@@ -13,7 +13,7 @@
                               </svg>
                            </div>
                            <div class="progress-detail">
-                              <p  class="mb-2">Total Sales</p>
+                              <p  class="mb-2">Total gertgr</p>
                               <h4 class="counter" style="visibility: visible;">$560K</h4>
                            </div>
                         </div>
