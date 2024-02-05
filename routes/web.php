@@ -7,6 +7,7 @@ use App\Http\Controllers\Security\RoleController;
 use App\Http\Controllers\Security\PermissionController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AgentController;
+use App\Http\Controllers\AccountController;
 
 use Illuminate\Support\Facades\Artisan;
 // Packages
@@ -63,8 +64,22 @@ Route::group(['middleware' => 'auth'], function () {
     // Users Module
     Route::resource('users', UserController::class);
     // agent module
-    Route::resource('agents', AgentController::class);
-    Route::get('agents/create',[AgentController::class,'create'])->name('agent.create');
+    Route::group(['prefix' => 'agents'], function() {
+        Route::get('agents', [AgentController::class, 'index'])->name('agents');
+        Route::get('agents/create', [AgentController::class, 'create'])->name('agent.create');
+        
+    });
+    //////accounts //////////////
+    //Widget Routs
+Route::group(['prefix' => 'accounts'], function() {
+    Route::get('payment', [AccountController::class, 'index'])->name('payment.request');
+    Route::get('payment_report', [AccountController::class, 'payment_report'])->name('payment.report');
+    Route::get('my_credit_book', [AccountController::class, 'my_credit_book'])->name('payment.credit_book');
+    Route::get('company_bank_info', [AccountController::class, 'company_bank_info'])->name('payment.company_bank_info');
+    
+});
+   
+
    
 });
 
