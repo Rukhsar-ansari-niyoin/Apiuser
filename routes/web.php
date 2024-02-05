@@ -6,6 +6,8 @@ use App\Http\Controllers\Security\RolePermission;
 use App\Http\Controllers\Security\RoleController;
 use App\Http\Controllers\Security\PermissionController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AgentController;
+
 use Illuminate\Support\Facades\Artisan;
 // Packages
 use Illuminate\Support\Facades\Route;
@@ -60,6 +62,10 @@ Route::group(['middleware' => 'auth'], function () {
 
     // Users Module
     Route::resource('users', UserController::class);
+    // agent module
+    Route::resource('agents', AgentController::class);
+    Route::get('agents/create',[AgentController::class,'create'])->name('agent.create');
+   
 });
 
 //App Details Page => 'Dashboard'], function() {
