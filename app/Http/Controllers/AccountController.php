@@ -66,7 +66,7 @@ class AccountController extends Controller
    $auth_user = AuthHelper::authSession();
    $assets = ['data-table'];
    //$headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
-   return view('accounts.company_bank_info',compact('pageTitle','auth_user','assets'));
+   return view('accounts.passbook',compact('pageTitle','auth_user','assets'));
  }
  public function invoice(){
    $pageTitle = "invoice";

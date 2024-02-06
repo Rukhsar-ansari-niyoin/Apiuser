@@ -109,14 +109,14 @@
 <div class="col-md-3">
   <div class="form-group">
 
-    <input type="text" class="form-control" name="pwd" placeholder="05-02-2024">
+    <input type="date" class="form-control" name="pwd" placeholder="05-02-2024">
 
   </div>
 </div>
 <div class="col-md-3">
   <div class="form-group">
 
-    <input type="password" class="form-control" name="pwd" placeholder="05-02-2024">
+    <input type="date" class="form-control" name="pwd" placeholder="05-02-2024">
 
   </div>
 </div>
