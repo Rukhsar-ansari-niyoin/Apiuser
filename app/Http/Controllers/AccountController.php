@@ -75,4 +75,11 @@ class AccountController extends Controller
    //$headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
    return view('accounts.company_bank_info',compact('pageTitle','auth_user','assets'));
  }
+ public function low_balance(){
+  $pageTitle = "LOW BALANCE ALERTS";
+   $auth_user = AuthHelper::authSession();
+   $assets = ['data-table'];
+   //$headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
+   return view('accounts.low_balance',compact('pageTitle','auth_user','assets'));
+ }
 }
