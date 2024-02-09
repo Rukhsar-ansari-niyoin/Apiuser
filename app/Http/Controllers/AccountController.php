@@ -59,7 +59,7 @@ class AccountController extends Controller
    $auth_user = AuthHelper::authSession();
    $assets = ['data-table'];
    //$headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
-   return view('accounts.company_bank_info',compact('pageTitle','auth_user','assets'));
+   return view('accounts.day_book',compact('pageTitle','auth_user','assets'));
  }
  public function passbook(){
    $pageTitle = "passbook";
@@ -74,5 +74,13 @@ class AccountController extends Controller
    $assets = ['data-table'];
    //$headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
    return view('accounts.company_bank_info',compact('pageTitle','auth_user','assets'));
+ }
+
+ public function upgrade_package(){
+  $pageTitle = "SERVICE ACTIVATION";
+   $auth_user = AuthHelper::authSession();
+   $assets = ['data-table'];
+   //$headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
+   return view('accounts.upgrade_package',compact('pageTitle','auth_user','assets'));
  }
 }

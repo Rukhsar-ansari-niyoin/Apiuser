@@ -80,6 +80,7 @@ Route::group(['prefix' => 'accounts'], function() {
     Route::get('daybook', [AccountController::class, 'daybook'])->name('payment.daybook');
     Route::get('passbook', [AccountController::class, 'passbook'])->name('payment.passbook');
     Route::get('invoice', [AccountController::class, 'invoice'])->name('payment.invoice');
+    Route::get('upgrade_package', [AccountController::class, 'upgrade_package'])->name('upgrade_package');
 });
    
 
