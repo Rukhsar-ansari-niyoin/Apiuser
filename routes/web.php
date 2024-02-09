@@ -76,11 +76,16 @@ Route::group(['prefix' => 'accounts'], function() {
     Route::get('payment_report', [AccountController::class, 'payment_report'])->name('payment.report');
     Route::get('my_credit_book', [AccountController::class, 'my_credit_book'])->name('payment.credit_book');
     Route::get('company_bank_info', [AccountController::class, 'company_bank_info'])->name('payment.company_bank_info');
-    Route::get('disputes', [AccountController::class, 'disputes'])->name('payment.disputes');
+    Route::get('disputes', [AccountController::class, 'disputes'])->name('disputes');
     Route::get('daybook', [AccountController::class, 'daybook'])->name('payment.daybook');
     Route::get('passbook', [AccountController::class, 'passbook'])->name('payment.passbook');
     Route::get('invoice', [AccountController::class, 'invoice'])->name('payment.invoice');
+<<<<<<< HEAD
     Route::get('upgrade_package', [AccountController::class, 'upgrade_package'])->name('upgrade_package');
+=======
+    Route::get('low_balance', [AccountController::class, 'low_balance'])->name('payment.low_balance');
+    
+>>>>>>> 6086c6b6d6382ada48e9809b57a9e24e3daed4c2
 });
    
 
