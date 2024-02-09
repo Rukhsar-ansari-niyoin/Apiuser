@@ -59,11 +59,11 @@ class AccountController extends Controller
    $auth_user = AuthHelper::authSession();
    $assets = ['data-table'];
    //$headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
-<<<<<<< HEAD
+
    return view('accounts.day_book',compact('pageTitle','auth_user','assets'));
-=======
+
    return view('accounts.daybook',compact('pageTitle','auth_user','assets'));
->>>>>>> 6086c6b6d6382ada48e9809b57a9e24e3daed4c2
+
  }
  public function passbook(){
    $pageTitle = "passbook";
@@ -79,7 +79,6 @@ class AccountController extends Controller
    //$headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
    return view('accounts.company_bank_info',compact('pageTitle','auth_user','assets'));
  }
-<<<<<<< HEAD
 
  public function upgrade_package(){
   $pageTitle = "SERVICE ACTIVATION";
@@ -87,13 +86,13 @@ class AccountController extends Controller
    $assets = ['data-table'];
    //$headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
    return view('accounts.upgrade_package',compact('pageTitle','auth_user','assets'));
-=======
+ }
  public function low_balance(){
   $pageTitle = "LOW BALANCE ALERTS";
    $auth_user = AuthHelper::authSession();
    $assets = ['data-table'];
    //$headerAction = '<a href="'.route('agent.create').'" class="btn btn-sm btn-primary" role="button">Add Agent</a>';
    return view('accounts.low_balance',compact('pageTitle','auth_user','assets'));
->>>>>>> 6086c6b6d6382ada48e9809b57a9e24e3daed4c2
+
  }
 }
