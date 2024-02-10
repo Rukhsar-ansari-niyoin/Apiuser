@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\DataTables\UsersDataTable;
+use App\Models\User;
+use App\Helpers\AuthHelper;
+use Spatie\Permission\Models\Role;
+use App\Http\Requests\UserRequest;
 
 class HomeController extends Controller
 {
@@ -15,10 +20,17 @@ class HomeController extends Controller
         return view('dashboards.user-dashboard', compact('assets'));
     }
 
-    public function dasboard(Request $request)
+    public function dashboard(Request $request)
     {
         $assets = ['chart', 'animation'];
         return view('dashboards.admin-dashboard', compact('assets'));
+    }
+    public function services(){
+        $pageTitle = "View All Services";
+        $auth_user = AuthHelper::authSession();
+        $assets = ['data-table'];
+       
+        return view('admin.services',compact('pageTitle','auth_user','assets'));
     }
     /*
      * Menu Style Routs

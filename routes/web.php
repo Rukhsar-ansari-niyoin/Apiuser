@@ -47,7 +47,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     // Dashboard Routes
     Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
-
+    Route::get('/services', [HomeController::class, 'services'])->name('services');
     // Users Module
     Route::resource('users', UserController::class);
     // agent module

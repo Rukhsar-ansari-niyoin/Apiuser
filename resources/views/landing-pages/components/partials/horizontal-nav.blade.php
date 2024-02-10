@@ -37,7 +37,7 @@
                         </a>
                     </li>
                     <li class="nav-item"><a class="nav-link {{ activeRoute(route('landing-pages.software')) }}"
-                            href="{{ route('landing-pages.software') }}">Landing Page</a></li>
+                            href="{{ route('landing-pages.software') }}">Software Landing Page</a></li>
                 </ul>
             </li>
             <li class="nav-item"><a class="nav-link {{ activeRoute(route('landing-pages.about')) }}"
