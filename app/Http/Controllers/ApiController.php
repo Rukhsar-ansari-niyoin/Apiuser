@@ -19,4 +19,12 @@ class ApiController extends Controller
   
    return view('api.OperatorList',compact('pageTitle','auth_user','assets'));
     }
+
+    public function Ipcallback(){
+        $pageTitle = "IP CALLBACK SETTINGS";
+        $auth_user = AuthHelper::authSession();
+        $assets = ['data-table'];
+       
+        return view('api.ipcallback',compact('pageTitle','auth_user','assets'));
+    }
 }

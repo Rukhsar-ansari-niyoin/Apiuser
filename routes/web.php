@@ -72,7 +72,7 @@ Route::group(['middleware' => 'auth'], function () {
     ////////API/////////////
     Route::group(['prefix' => 'api'], function() {
         Route::get('OperatorList', [ApiController::class, 'OperatorList'])->name('OperatorList');
-        //Route::get('agents/create', [ApiController::class, 'create'])->name('agent.create');
+        Route::get('ip-callback-settings', [ApiController::class, 'Ipcallback'])->name('ip-callback-settings');
         
     });
     //////accounts //////////////
