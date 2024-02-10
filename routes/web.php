@@ -69,6 +69,12 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('agents/create', [AgentController::class, 'create'])->name('agent.create');
         
     });
+    ////////API/////////////
+    Route::group(['prefix' => 'api'], function() {
+        Route::get('OperatorList', [ApiController::class, 'OperatorList'])->name('OperatorList');
+        //Route::get('agents/create', [ApiController::class, 'create'])->name('agent.create');
+        
+    });
     //////accounts //////////////
     //Widget Routs
 Route::group(['prefix' => 'accounts'], function() {
