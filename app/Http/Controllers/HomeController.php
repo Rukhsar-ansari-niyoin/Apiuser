@@ -15,6 +15,11 @@ class HomeController extends Controller
         return view('dashboards.user-dashboard', compact('assets'));
     }
 
+    public function dasboard(Request $request)
+    {
+        $assets = ['chart', 'animation'];
+        return view('dashboards.admin-dashboard', compact('assets'));
+    }
     /*
      * Menu Style Routs
      */

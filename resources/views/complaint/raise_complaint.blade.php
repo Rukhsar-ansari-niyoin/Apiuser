@@ -14,18 +14,18 @@
             </div>
             <div class="card-body px-0">
                <!-- main content start  -->
-        <div class="conatiner-fluid mt-4 px-4 py-0">
+               <div class="conatiner-fluid mt-4 px-4 py-0">
             <div class="card p-2">
                 <div class="bd-example">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <div class="d-flex flex-row justify-content-between align-items-center py-2 w-100">
                                 <div class="d-flex px-1">
-                                    <a class="border-0 text-danger border-bottom border-2 border-danger rounded-1">Raise
+                                    <a class="border-0 btn-soft-danger border-bottom border-2 border-primary rounded-1">Raise
                                         New Request</a>
                                 </div>
-                                <div class="d-flex pe-1">
-                                    <button class="btn btn-soft-danger btn-sm">
+                                <div class="d-flex btn-soft-primary pe-1">
+                                    <button class="btn btn-soft-primary btn-sm">
                                         Track Complaint
                                     </button>
                                 </div>
@@ -39,29 +39,29 @@
                     </p>
                     <div class="border-top mb-5"></div>
                     <div>
-                        <button type="button" class="btn btn-outline-danger mt-2">
+                        <button type="button" class="btn btn-soft-primary mt-2">
                             Account Activation
                         </button>
-                        <button type="button" class="btn btn-outline-danger mt-2">
+                        <button type="button" class="btn btn-soft-primary mt-2">
                             Account Configuration/changes
                         </button>
-                        <button type="button" class="btn btn-outline-danger mt-2">
+                        <button type="button" class="btn btn-soft-primary mt-2">
                             eValue Related
                         </button>
-                        <button type="button" class="btn btn-outline-danger mt-2">
+                        <button type="button" class="btn btn-soft-primary mt-2">
                             Technical Assistance
                         </button>
-                        <button type="button" class="btn btn-outline-danger mt-2">
+                        <button type="button" class="btn btn-soft-primary mt-2">
                             Other
                         </button>
-                        <button type="button" class="btn btn-outline-danger mt-2">
+                        <button type="button" class="btn btn-soft-primary mt-2">
                             Transactions Related
                         </button>
-                        <button type="button" class="btn btn-outline-danger mt-2">
+                        <button type="button" class="btn btn-soft-primary mt-2">
                             Fund Settlement Related
                         </button>
 
-                        <button type="button" class="btn btn-outline-danger mt-2">
+                        <button type="button" class="btn btn-soft-primary mt-2">
                             Tech Issue/Api Integration Related Issues
                         </button>
                     </div>

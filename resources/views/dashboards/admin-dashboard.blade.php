@@ -13,7 +13,7 @@
                               </svg>
                            </div>
                            <div class="progress-detail">
-                              <p  class="mb-2">Total gertgr</p>
+                              <p  class="mb-2">Total admin</p>
                               <h4 class="counter" style="visibility: visible;">$560K</h4>
                            </div>
                         </div>
@@ -515,7 +515,7 @@
                <div class="card" data-aos="fade-up" data-aos-delay="400">
                   <div class="card-header d-flex justify-content-between flex-wrap">
                      <div class="header-title">
-                        <h4 class="card-title mb-2">Activity overview</h4>
+                        <h4 class="card-title mb-2">agents dasboard</h4>
                         <p class="mb-0">
                            <svg class ="me-2" width="24" height="24" viewBox="0 0 24 24">
                               <path fill="#17904b" d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" />
