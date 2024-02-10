@@ -9,6 +9,8 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AgentController;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\ApiController;
+use App\Http\Controllers\ComplaintController;
+
 use Illuminate\Support\Facades\Artisan;
 // Packages
 use Illuminate\Support\Facades\Route;
@@ -73,6 +75,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::group(['prefix' => 'api'], function() {
         Route::get('OperatorList', [ApiController::class, 'OperatorList'])->name('OperatorList');
         Route::get('ip-callback-settings', [ApiController::class, 'Ipcallback'])->name('ip-callback-settings');
+        
+    });
+    //////complaint///////
+    Route::group(['prefix' => 'complaint'], function() {
+        Route::get('track_complaint', [ComplaintController::class, 'track_complaint'])->name('track_complaint');
+       Route::get('raise_complaint', [ComplaintController::class, 'raise_complaint'])->name('raise_complaint');
         
     });
     //////accounts //////////////
