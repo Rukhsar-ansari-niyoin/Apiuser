@@ -13,65 +13,81 @@
                 </div>
             </div>
             <div class="card-body px-0">
-               <div class="table-responsive">
-               <table id="datatable" class="table table-striped" data-toggle="data-table">
-                  <thead>
-                     <tr>
-                        <th>#</th>
-                        <th>Bank Logo</th>
-                        <th>Bank Name</th>
-                        <th>Account Holder</th>
-                        <th>IFSC Code</th>
-                        <th>Branch Name</th>
-                       
-                        
-                     </tr>
-                  </thead>
-                  <tbody>
-                   
-                  
-                
+            
+        <!-- main title  -->
+        <!-- table 1  -->
+        <div class="container-fluid container-inner py-0">
+            <div class="card">
+                <p class="card-header text-black">Operator List</p>
+                <div class="row">
+                    <div class="col-md-6 m-lg-4 w-50">
+                      <div class="form-group">
+                        <select class="form-select" aria-label="Disabled select example">
+                          <option selected="">Select Service Category</option>
+                          <option value="1">Broadband</option>
+                          <option value="2">Cable Tv</option>
+                          <option value="3">Clubs And Associations</option>
+                          <option value="3">Credit Card</option>
+                          <option value="3">Electricity</option>
+                          <option value="3">Fastag</option>
+                          <option value="3">Hosting And Pathology</option>
+                          <option value="3">Hosting Society</option>
+                          <option value="3">Insurance Premium</option>
+                          <option value="3">Landline</option>
+                          <option value="3">Loan Repayment</option>
+                          <option value="3">LPG Gas</option>
+                          <option value="3">Municipal Taxes</option>
+                          <option value="3">Piped Gas</option>
+                          <option value="3">Subscription Payment</option>
+                          <option value="3">Water</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-5 m-lg-4">
+                      <div class="form-group">
+                        <button type="button" class="btn btn-primary "> Search_Records</button>
+                      </div>
+                    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-12 m-lg-4">
+            <div class="card">
+
+                <div class="card-body p-0">
+                    <div class="table-responsive mt-4">
+                        <table id="basic-table" class="table table-striped mb-0" role="grid">
+                            <thead>
+                                <tr>
+                                    <th>Operator Name</th>
+                                    <th>P2</th>
+                                    <th>P3</th>
+                                    <th>P4</th>
+                                    <th>p5</th>
+                                    <th>P6</th>
+                                    <th>Descriptrion</th>
+                                    <th>Bill Fetch Requried</th>
+                                    <th>Attachment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                  </div>
+            </div>
+        </div>
+    
+
+    
                     
-                     <tr>
-                        <td>Shad Decker</td>
-                        <td>Regional Director</td>
-                        <td>Edinburgh</td>
-                        <td>51</td>
-                        <td>2008/11/13</td>
-                        <td>$183,000</td>
-                        
-                     </tr>
-                     <tr>
-                        <td>Michael Bruce</td>
-                        <td>Javascript Developer</td>
-                        <td>Singapore</td>
-                        <td>29</td>
-                        <td>2011/06/27</td>
-                        <td>$183,000</td>
-                       
-                     </tr>
-                     <tr>
-                        <td>Donna Snider</td>
-                        <td>Customer Support</td>
-                        <td>New York</td>
-                        <td>27</td>
-                        <td>2011/01/25</td>
-                        <td>$112,000</td>
-                        
-                     </tr>
-                  </tbody>
-                  <!-- <tfoot>
-                     <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
-                     </tr>
-                  </tfoot> -->
-               </table>
-               </div>
+             
             </div>
          </div>
       </div>
