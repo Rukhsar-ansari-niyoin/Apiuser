@@ -32,6 +32,21 @@ class HomeController extends Controller
        
         return view('admin.services',compact('pageTitle','auth_user','assets'));
     }
+
+    public function add_Commission(){
+        $pageTitle = "add_Commission";
+        $auth_user = AuthHelper::authSession();
+        $assets = ['data-table'];
+       
+        return view('admin.add_Commission',compact('pageTitle','auth_user','assets'));
+    }
+    public function Commission(){
+        $pageTitle = "View All Commission";
+        $auth_user = AuthHelper::authSession();
+        $assets = ['data-table'];
+       
+        return view('admin.Commission',compact('pageTitle','auth_user','assets'));
+    }
     /*
      * Menu Style Routs
      */
