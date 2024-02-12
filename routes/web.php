@@ -50,6 +50,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/services', [HomeController::class, 'services'])->name('services');
     Route::get('/Commission', [HomeController::class, 'Commission'])->name('Commission');
     Route::get('/add_Commission', [HomeController::class, 'add_Commission'])->name('add_Commission');
+    Route::get('/company_bank_info', [HomeController::class, 'company_bank_info'])->name('company_bank_info');
+    Route::get('/add_new_bank', [HomeController::class, 'add_new_bank'])->name('add_new_bank');
+    Route::get('/admin_wallet', [HomeController::class, 'admin_wallet'])->name('admin_wallet');
     // Users Module
     Route::resource('users', UserController::class);
     // agent module
