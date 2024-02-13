@@ -189,4 +189,10 @@ return [
             'meta' => [],
         ],
     ],
+
+    'default' => [
+        'name' => 'Ethereum',
+        'slug' => 'ETH',
+        'meta' => [],
+    ],
 ];
